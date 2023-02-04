@@ -34,6 +34,8 @@ public class ArrayLists {
         l2.add(100);
         l2.add(200);
         l2.add(300);
+        l2.add(300);
+        l2.add(300);
 
         numbers.addAll(l2); // add elements of l2 to numbers
 
@@ -46,6 +48,11 @@ public class ArrayLists {
         numbers.set(0,1000); // sets/ updates the value at index 0 to 1000
 
         System.out.println("Value at index 0 is: " + numbers.get(0)); // get() is used retrieve the elements needed not the full list
+
+         // The index of the last occurrence of a specific element is either returned or -1 in case the element is not in the list
+
+        System.out.println("Last Index of 300 is: " + numbers.lastIndexOf(300)); //returns last index
+        System.out.println("Index of 300 is: "+ numbers.indexOf(300)); // return the first occurrence of the element
 
 
 
